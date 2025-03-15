@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation d'Email | Pharmacina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .success-icon {
+            background-color: #1DB954;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .message {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .app-button {
+            background-color: #1DB954;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        
+        .app-button:hover {
+            background-color: #19a34a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(29, 185, 84, 0.3);
+        }
+        
+        .secondary-link {
+            color: #1DA1F2;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            display: block;
+            margin-top: 15px;
+        }
+        
+        .secondary-link:hover {
+            text-decoration: underline;
+        }
+        
+        .logo {
+            margin-bottom: 30px;
+            width: 150px;
+            height: auto;
+        }
+        
+        .decoration {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(29, 185, 84, 0.1);
+            z-index: -1;
+        }
+        
+        .decoration-1 {
+            top: -100px;
+            right: -100px;
+        }
+        
+        .decoration-2 {
+            bottom: -100px;
+            left: -100px;
+            background-color: rgba(29, 161, 242, 0.1);
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .title {
+                font-size: 20px;
+            }
+            
+            .message {
+                font-size: 14px;
+            }
+            
+            .app-button {
+                padding: 12px 25px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+        
+        <!-- Remplacez par votre logo -->
+        <img src="https://via.placeholder.com/150x50?text=Pharmacina" alt="Pharmacina Logo" class="logo">
+        
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+            </svg>
+        </div>
+        
+        <h1 class="title">Email confirmé avec succès !</h1>
+        
+        <p class="message">
+            Merci d'avoir confirmé votre adresse email. Votre compte est maintenant activé et vous pouvez accéder à toutes les fonctionnalités de Pharmacina.
+        </p>
+        
+        <a href="pharmacina://login" class="app-button">
+            Ouvrir l'application
+        </a>
+        
+        <p class="message">
+            Si l'application ne s'ouvre pas automatiquement, veuillez l'ouvrir manuellement.
+        </p>
+        
+        <a href="#" class="secondary-link">Besoin d'aide ? Contactez-nous</a>
+    </div>
+</body>
+</html> 
